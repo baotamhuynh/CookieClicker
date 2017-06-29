@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *
      */
-    public void clickMeButtonOnClick() {
+    public void ClickMeButtonOnClick() {
         mainScore++;
         displayScore(mainScore);
     }
