@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      *
+     * Displays the main score
+     *
+     * @param score
      */
     public void displayScore(int score){
             TextView scoreSet = (TextView) findViewById(R.id.mainScore);
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     *
+     * Displays how many times normal bonus has been bought
      *
      * @param score
      */
@@ -49,6 +54,19 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      *
+     * Displays the calculation of normal over time bonus
+     *
+     * @param score
+     */
+    public void displayNormalBonusCalc(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Displays how many times super bonus has been bought
+     *
      * @param score
      */
     public void displaySuperBonusCount(int score){
@@ -57,6 +75,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     *
+     * Displays the calculation of super over time bonus
+     *
+     * @param score
+     */
+    public void displaySuperBonusCalc(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Displays how many times duper bonus has been bought
      *
      * @param score
      */
@@ -69,12 +100,36 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
+    public void displayDuperBonusCalc(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Displays the calculation of normal over time bonus
+     *
+     * @param score
+     */
     public void displayHyperBonusCount(int score){
         TextView scoreSet = (TextView) findViewById(R.id.mainScore);
         scoreSet.setText(String.valueOf(score));
     }
 
     /**
+     *
+     * Displays the calculation of normal over time bonus
+     *
+     * @param score
+     */
+    public void displayHyperBonusCalc(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Displays the calculation of normal over time bonus
      *
      * @param score
      */
@@ -83,7 +138,35 @@ public class MainActivity extends AppCompatActivity {
         scoreSet.setText(String.valueOf(score));
     }
 
+    /**
+     *
+     * Displays the calculation of normal over time bonus
+     *
+     * @param score
+     */
+    public void displayDyperBonusCalc(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Displays the calculation of normal over time bonus
+     *
+     * @param score
+     */
     public void displayUltraBonusCount(int score){
+        TextView scoreSet = (TextView) findViewById(R.id.mainScore);
+        scoreSet.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     *
+     *
+     * @param score
+     */
+    public void displayUltraBonusCalc(int score){
         TextView scoreSet = (TextView) findViewById(R.id.mainScore);
         scoreSet.setText(String.valueOf(score));
     }
@@ -114,14 +197,14 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void superButtonPress(){
-        superBonusCost += 10;
+
         if (mainScore < normalBonusCost){
             Toast.makeText(this,"You do not have enough points.",Toast.LENGTH_SHORT);
             return;
         }
         else{
             mainScore -= normalBonusCost;
-
+            superBonusCost += 10;
         }
     }
 
@@ -129,13 +212,14 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void duperButtonPress(){
-        duperBonusCost += 15;
+
         if (mainScore < normalBonusCost){
             Toast.makeText(this,"You do not have enough points.",Toast.LENGTH_SHORT);
             return;
         }
         else{
             mainScore -= normalBonusCost;
+            duperBonusCost += 15;
         }
     }
 
@@ -143,13 +227,14 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void hyperButtonPress(){
-        hyperBonusCost += 20;
+
         if (mainScore < normalBonusCost){
             Toast.makeText(this,"You do not have enough points.",Toast.LENGTH_SHORT);
             return;
         }
         else{
             mainScore -= normalBonusCost;
+            hyperBonusCost += 20;
         }
     }
 
@@ -157,13 +242,14 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void dyperButtonPress(){
-        dyperBonusCost += 25;
+
         if (mainScore < normalBonusCost){
             Toast.makeText(this,"You do not have enough points.",Toast.LENGTH_SHORT);
             return;
         }
         else{
             mainScore -= normalBonusCost;
+            dyperBonusCost += 25;
         }
     }
 
@@ -171,13 +257,14 @@ public class MainActivity extends AppCompatActivity {
      *
      */
     public void ultraButtonPress(){
-        ultraBonusCost += 30;
+
         if (mainScore < normalBonusCost){
             Toast.makeText(this,"You do not have enough points.",Toast.LENGTH_SHORT);
             return;
         }
         else{
             mainScore -= normalBonusCost;
+            ultraBonusCost += 30;
         }
     }
 
