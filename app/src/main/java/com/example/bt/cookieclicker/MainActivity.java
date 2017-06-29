@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
-    public void displayNormalBonusCalc(int score) {
+    public void displayNormalBonusCalc(String score) {
         TextView scoreSet = (TextView) findViewById(R.id.tvNormalCalc);
         scoreSet.setText(String.valueOf(score));
     }
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
-    public void displaySuperBonusCalc(int score) {
+    public void displaySuperBonusCalc(String score) {
         TextView scoreSet = (TextView) findViewById(R.id.tvSuperCalc);
         scoreSet.setText(String.valueOf(score));
     }
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
-    public void displayDuperBonusCalc(int score) {
+    public void displayDuperBonusCalc(String score) {
         TextView scoreSet = (TextView) findViewById(R.id.tvDuperCalc);
         scoreSet.setText(String.valueOf(score));
     }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
-    public void displayHyperBonusCalc(int score) {
+    public void displayHyperBonusCalc(String score) {
         TextView scoreSet = (TextView) findViewById(R.id.tvHyperCalc);
         scoreSet.setText(String.valueOf(score));
     }
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param score
      */
-    public void displayDyperBonusCalc(int score) {
+    public void displayDyperBonusCalc(String score) {
         TextView scoreSet = (TextView) findViewById(R.id.tvDyperCalc);
         scoreSet.setText(String.valueOf(score));
     }
@@ -155,11 +155,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the calculation of ultra over time bonus
      *
-     * @param score
+     * @param ultraCalc
      */
-    public void displayUltraBonusCalc(int score) {
+    public void displayUltraBonusCalc(String ultraCalc) {
         TextView scoreSet = (TextView) findViewById(R.id.tvUltraCalc);
-        scoreSet.setText(String.valueOf(score));
+        scoreSet.setText(String.valueOf(ultraCalc));
     }
 
     int secondsPassed = 0;
