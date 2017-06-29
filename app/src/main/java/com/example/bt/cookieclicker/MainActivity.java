@@ -13,8 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     public int mainScore = 0;
 
-    public int totalBonusScore;
-
     public TextView tvMainScore;
 
     public Timer timer;
@@ -46,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         totalBonusScore = normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
-                hyperBonusPerSecond + megaBonusPerSecond + ultraBonusPerSecond;
-
         timer = new Timer();
         tvMainScore = (TextView) findViewById(R.id.tvMainScore);
 
@@ -57,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 runOnUiThread(new Runnable() {
                     public void run() {
-                        mainScore += totalBonusScore;
+                        mainScore += normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
+                                hyperBonusPerSecond + megaBonusPerSecond + ultraBonusPerSecond;
                         tvMainScore.setText(String.valueOf(mainScore));
                     }
                 });
@@ -104,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         tvSuperCount.setText(String.valueOf(superBonusCount));
         TextView tvMainScore = (TextView) findViewById(R.id.tvMainScore);
         tvMainScore.setText(String.valueOf(mainScore));
+
     }
 
     public void btDuperBonusAdd (View v){
@@ -230,32 +227,6 @@ public class MainActivity extends AppCompatActivity {
         scoreSet.setText(String.valueOf(score + "/s"));
     }
 
-
-/*
-    public void normalButtonOnClick() {
-            mainScore = normalBonusCount * timer.scheduleAtFixedRate(task,1000,1000);
-            displayScore(mainScore);
-    }
-    public void superButtonOnClick() {
-            mainScore = superBonusCount * timer.scheduleAtFixedRate(task,1000,2000);
-            displayScore(mainScore);
-    }
-    public void duperButtonOnClick() {
-            mainScore = duperBonusCount * timer.scheduleAtFixedRate(task,1000,3000);
-            displayScore(mainScore);
-    }
-    public void hyperButtonOnClick() {
-            mainScore = hyperBonusCount * timer.scheduleAtFixedRate(task,1000,4000);
-            displayScore(mainScore);
-    }
-    public void megaButtonOnClick() {
-            mainScore = megaBonusCount * timer.scheduleAtFixedRate(task,1000,5000);
-            displayScore(mainScore);
-    }
-    public void ultraButtonOnClick() {
-            mainScore = ultraBonusCount * timer.scheduleAtFixedRate(task,1000,6000);
-            displayScore(mainScore);
-    }*/
 
     public void ResetButtonOnClick() {
         mainScore = 0;
