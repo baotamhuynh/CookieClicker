@@ -18,24 +18,21 @@ public class MainActivity extends AppCompatActivity {
         Initialization();
     }
 
+    int mainScore = 0;
 
-    public void Initialization() {
-        int mainScore = 0;
+    int normalBonusCount = 0;
+    int superBonusCount = 0;
+    int duperBonusCount = 0;
+    int hyperBonusCount = 0;
+    int dyperBonusCount = 0;
+    int ultraBonusCount = 0;
 
-        int normalBonusCount = 0;
-        int superBonusCount = 0;
-        int duperBonusCount = 0;
-        int hyperBonusCount = 0;
-        int dyperBonusCount = 0;
-        int ultraBonusCount = 0;
-
-        int normalBonusCost = 5;
-        int superBonusCost = 10;
-        int duperBonusCost = 20;
-        int hyperBonusCost = 35;
-        int dyperBonusCost = 55;
-        int ultraBonusCost = 80;
-    }
+    int normalBonusCost = 5;
+    int superBonusCost = 10;
+    int duperBonusCost = 20;
+    int hyperBonusCost = 35;
+    int dyperBonusCost = 55;
+    int ultraBonusCost = 80;
 
     /**
      * Displays the main score
@@ -167,6 +164,15 @@ public class MainActivity extends AppCompatActivity {
         scoreSet.setText(String.valueOf(score));
     }
 
+    int secondsPassed = 0;
+    Timer timer = new Timer();
+    TimerTask task = new TimerTask() {
+        @Override
+        public void run() {
+            secondsPassed++;
+        }
+    };
+
     /**
      *
      */
@@ -186,6 +192,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             mainScore -= normalBonusCost;
             normalBonusCost += 5;
+            displayNormalBonusCount(normalBonusCount);
+            displayNormalBonusCalc(normalBonusCount + " * 1/s");
+            mainScore = normalBonusCount * timer.scheduleAtFixedRate(task,1000,1000);
+            displayScore(mainScore);
         }
     }
 
@@ -194,12 +204,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void superButtonOnClick() {
 
-        if (mainScore < normalBonusCost) {
+        if (mainScore < superBonusCost) {
             Toast.makeText(this, "You do not have enough points.", Toast.LENGTH_SHORT);
             return;
         } else {
-            mainScore -= normalBonusCost;
+            mainScore -= superBonusCost;
             superBonusCost += 10;
+            displaySuperBonusCount(superBonusCount);
+            displaySuperBonusCalc(superBonusCount + " * 2/s");
+            mainScore = superBonusCount * timer.scheduleAtFixedRate(task,1000,2000);
+            displayScore(mainScore);
         }
     }
 
@@ -208,12 +222,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void duperButtonOnClick() {
 
-        if (mainScore < normalBonusCost) {
+        if (mainScore < duperBonusCost) {
             Toast.makeText(this, "You do not have enough points.", Toast.LENGTH_SHORT);
             return;
         } else {
-            mainScore -= normalBonusCost;
+            mainScore -= duperBonusCost;
             duperBonusCost += 15;
+            displayDuperBonusCount(duperBonusCount);
+            displayDuperBonusCalc(duperBonusCount + " * 3/s");
+            mainScore = duperBonusCount * timer.scheduleAtFixedRate(task,1000,3000);
+            displayScore(mainScore);
         }
     }
 
@@ -222,12 +240,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void hyperButtonOnClick() {
 
-        if (mainScore < normalBonusCost) {
+        if (mainScore < hyperBonusCost) {
             Toast.makeText(this, "You do not have enough points.", Toast.LENGTH_SHORT);
             return;
         } else {
-            mainScore -= normalBonusCost;
+            mainScore -= hyperBonusCost;
             hyperBonusCost += 20;
+            hyperBonusCount++;
+            displayHyperBonusCount(HyperBonusCount);
+            displayHyperBonusCalc(HyperBonusCount + " * 4/s");
+            mainScore = hyperBonusCount * timer.scheduleAtFixedRate(task,1000,4000);
+            displayScore(mainScore);
         }
     }
 
@@ -236,12 +259,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void dyperButtonOnClick() {
 
-        if (mainScore < normalBonusCost) {
+        if (mainScore < dyperBonusCost) {
             Toast.makeText(this, "You do not have enough points.", Toast.LENGTH_SHORT);
             return;
         } else {
-            mainScore -= normalBonusCost;
+            mainScore -= dyperBonusCost;
             dyperBonusCost += 25;
+            dyperBonusCount++;
+            displayDyperBonusCount(dyperBonusCount);
+            displayDyperBonusCalc(dyperBonusCount + " * 5/s");
+            mainScore = dyperBonusCount * timer.scheduleAtFixedRate(task,1000,5000);
+            displayScore(mainScore);
         }
     }
 
@@ -250,26 +278,19 @@ public class MainActivity extends AppCompatActivity {
      */
     public void ultraButtonOnClick() {
 
-        if (mainScore < normalBonusCost) {
+        if (mainScore < ultraBonusCost) {
             Toast.makeText(this, "You do not have enough points.", Toast.LENGTH_SHORT);
             return;
         } else {
-            mainScore -= normalBonusCost;
+            mainScore -= ultraBonusCost;
             ultraBonusCost += 30;
-            timer.scheduleAtFixedRate(task,1000,1000);
+            ultraBonusCount++;
+            displayUltraBonusCount(ultraBonusCount);
+            displayDuperBonusCalc(ultraBonusCount + " * 6/s");
+            mainScore = ultraBonusCount * timer.scheduleAtFixedRate(task,1000,6000);
+            displayScore(mainScore);
         }
     }
-
-    int secondsPassed = 0;
-    Timer timer = new Timer();
-    TimerTask task = new TimerTask() {
-        @Override
-        public void run() {
-            secondsPassed++;
-        }
-    };
-
-    timer.scheduleAtFixedRate(task,1000,1000);
 
 
     public void scorePerSec() {

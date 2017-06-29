@@ -1,96 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#111"
-    android:orientation="vertical"
-    tools:context="com.example.bt.cookieclicker.MainActivity">
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="23">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="vertical">
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:background="@drawable/wood_pattern">
+
+            <TextView
+                android:id="@+id/tvMainScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="48dp"
+                android:gravity="center_horizontal"
+                android:text="[number]"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp" />
 
             <Button
+                android:id="@+id/btIncrementClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="Click Me!" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Normal"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvNormalCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/tvNormal"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvNormalCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNormalCount"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvSuper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-
-
-                android:layout_centerVertical="true"
-                android:text="Click Me!" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Hello!"
-                    android:textColor="#ffffff" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+                android:layout_marginTop="12dp"
+                android:text="Super"
+                android:textColor="@android:color/holo_blue_dark" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Bonuses"
-                android:textAlignment="center"
-                android:textColor="#ffffff" />
+                android:id="@+id/tvSuperCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/tvSuper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvSuperCalc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Normal" />
+                android:layout_below="@id/tvSuperCount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvDuper"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Super" />
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Duper"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvDuperCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvDuper"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvDuperCalc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Duper" />
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvDuperCount"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvHyper"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Hyper" />
+                android:layout_above="@id/tvHyperCount"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:text="Hyper"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvHyperCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@id/tvHyperCalc"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvHyperCalc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Dyper" />
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvDyper"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Ultra" />
+                android:layout_above="@id/tvHyperCount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:text="Dyper"
+                android:textColor="@android:color/holo_blue_dark" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvDyperCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@id/tvDyperCalc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvDyperCalc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonus Nakki" />
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tvUltra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tvHyperCount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Ultra"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvUltraCount"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@id/tvUltraCalc"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tvUltraCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="[calc]"
+                android:textColor="@android:color/holo_blue_dark" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bonuses"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Normal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Super" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Duper" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Hyper" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Dyper" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="Bonus Ultra" />
 
     </LinearLayout>
 </LinearLayout>
