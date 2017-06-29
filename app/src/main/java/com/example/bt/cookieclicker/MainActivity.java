@@ -13,6 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
     public int mainScore = 0;
 
+    public int totalBonusScore;
+
+    public TextView tvMainScore;
+
+    public Timer timer;
+
     public int normalBonusCount = 0;
     public int superBonusCount = 0;
     public int duperBonusCount = 0;
@@ -40,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final int totalBonusScore = normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
+         totalBonusScore = normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
                 hyperBonusPerSecond + megaBonusPerSecond + ultraBonusPerSecond;
 
-        Timer timer = new Timer();
-        final TextView tvMainScore = (TextView) findViewById(R.id.tvMainScore);
+        timer = new Timer();
+        tvMainScore = (TextView) findViewById(R.id.tvMainScore);
 
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
