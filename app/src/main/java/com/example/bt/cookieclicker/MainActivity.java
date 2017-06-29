@@ -40,9 +40,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int totalBonusScore = normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
+        final int totalBonusScore = normalBonusPerSecond + superBonusPreSecond + duperBonusPerSecond +
                 hyperBonusPerSecond + megaBonusPerSecond + ultraBonusPerSecond;
 
+        Timer timer = new Timer();
+        final TextView tvMainScore = (TextView) findViewById(R.id.tvMainScore);
+
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    public void run() {
+                        mainScore += totalBonusScore;
+                        tvMainScore.setText(String.valueOf(mainScore));
+                    }
+                });
+            }
+        }, 1000, 1000);
     }
 
     /**
@@ -210,14 +224,6 @@ public class MainActivity extends AppCompatActivity {
         scoreSet.setText(String.valueOf(score + "/s"));
     }
 
-    int secondsPassed = 0;
-    Timer timer = new Timer();
-    TimerTask task = new TimerTask() {
-        @Override
-        public void run() {
-            secondsPassed++;
-        }
-    };
 
 /*
     public void normalButtonOnClick() {
