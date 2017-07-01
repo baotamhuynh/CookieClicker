@@ -27,7 +27,6 @@
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textAllCaps="true"
-                android:textColor="@android:color/holo_blue_dark"
                 android:textSize="36sp" />
 
             <Button
@@ -59,8 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Normal"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Normal" />
 
             <TextView
                 android:id="@+id/tvNormalCount"
@@ -71,8 +69,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvNormalCalc"
@@ -81,8 +78,7 @@
                 android:layout_below="@id/tvNormalCount"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvSuper"
@@ -90,8 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="Super"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Super" />
 
             <TextView
                 android:id="@+id/tvSuperCount"
@@ -102,8 +97,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvSuperCalc"
@@ -112,8 +106,7 @@
                 android:layout_below="@id/tvSuperCount"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvDuper"
@@ -122,8 +115,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Duper"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Duper" />
 
             <TextView
                 android:id="@+id/tvDuperCount"
@@ -135,8 +127,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvDuperCalc"
@@ -146,8 +137,7 @@
                 android:layout_below="@id/tvDuperCount"
                 android:layout_marginEnd="12dp"
                 android:layout_marginTop="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvHyperCalc"
@@ -156,8 +146,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvHyperCount"
@@ -168,8 +157,7 @@
                 android:layout_marginStart="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvHyper"
@@ -178,8 +166,7 @@
                 android:layout_above="@id/tvHyperCount"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
-                android:text="Hyper"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Hyper" />
 
             <TextView
                 android:id="@+id/tvMegaCalc"
@@ -188,8 +175,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvMegaCount"
@@ -200,8 +186,7 @@
                 android:layout_marginBottom="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvMega"
@@ -210,8 +195,7 @@
                 android:layout_above="@id/tvMegaCount"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
-                android:text="Mega"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Mega" />
 
             <TextView
                 android:id="@+id/tvUltraCalc"
@@ -221,8 +205,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="0/s"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0/s"/>
 
             <TextView
                 android:id="@+id/tvUltraCount"
@@ -234,8 +217,7 @@
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/tvUltra"
@@ -245,8 +227,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="Ultra"
-                android:textColor="@android:color/holo_blue_dark" />
+                android:text="Ultra" />
 
         </RelativeLayout>
 
@@ -269,8 +250,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bonuses"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btNormalBonus"
@@ -285,8 +265,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 5"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 5" />
 
         <Button
             android:id="@+id/btSuperBonus"
@@ -301,8 +280,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 10"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 10" />
 
         <Button
             android:id="@+id/btDuperBonus"
@@ -317,8 +295,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 20"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 20" />
 
         <Button
             android:id="@+id/btHyperBonus"
@@ -333,8 +310,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 35"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 35" />
 
         <Button
             android:id="@+id/btMegaBonus"
@@ -349,8 +325,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 55"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 55" />
 
         <Button
             android:id="@+id/btUltraBonus"
@@ -365,8 +340,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 80"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:text="Cost: 80" />
 
     </LinearLayout>
 </LinearLayout>
