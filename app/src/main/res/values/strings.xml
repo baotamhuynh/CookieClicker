@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cookie Clicker</string>
+    <string name="about">About</string>
+    <string name="reset">Reset</string>
 </resources>

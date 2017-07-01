@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#111"
+    android:background="@color/colorBackground"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -15,20 +15,20 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:orientation="vertical"
-            android:background="@drawable/wood_pattern">
+            android:background="@drawable/wood_pattern"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvMainScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="40dp"
+                android:background="#88000000"
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textAllCaps="true"
                 android:textColor="@android:color/holo_blue_dark"
-                android:textSize="36sp"
-                android:background="#88000000"/>
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/btIncrementClick"
@@ -163,9 +163,9 @@
                 android:id="@+id/tvHyperCount"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:layout_above="@id/tvHyperCalc"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
-                android:layout_above="@id/tvHyperCalc"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="0"
@@ -195,10 +195,10 @@
                 android:id="@+id/tvMegaCount"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:layout_above="@id/tvMegaCalc"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
                 android:background="@drawable/back"
-                android:layout_above="@id/tvMegaCalc"
                 android:gravity="center"
                 android:text="0"
                 android:textColor="@android:color/holo_blue_dark" />
@@ -228,11 +228,11 @@
                 android:id="@+id/tvUltraCount"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:layout_above="@id/tvUltraCalc"
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/back"
-                android:layout_above="@id/tvUltraCalc"
                 android:gravity="center"
                 android:text="0"
                 android:textColor="@android:color/holo_blue_dark" />
@@ -273,46 +273,100 @@
             android:textColor="@android:color/holo_blue_dark" />
 
         <Button
+            android:id="@+id/btNormalBonus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btNormalBonusAdd"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="NormalBonusAdd"
             android:text="Bonus Normal" />
 
-        <Button
+        <TextView
+            android:id="@+id/tvNormalCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btSuperBonusAdd"
+            android:gravity="center_horizontal"
+            android:text="Cost: 5"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btSuperBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="SuperBonusAdd"
             android:text="Bonus Super" />
 
-        <Button
+        <TextView
+            android:id="@+id/tvSuperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btDuperBonusAdd"
+            android:gravity="center_horizontal"
+            android:text="Cost: 10"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btDuperBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="DuperBonusAdd"
             android:text="Bonus Duper" />
 
-        <Button
+        <TextView
+            android:id="@+id/tvDuperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btHyperBonusAdd"
+            android:gravity="center_horizontal"
+            android:text="Cost: 20"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btHyperBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="HyperBonusAdd"
             android:text="Bonus Hyper" />
 
-        <Button
+        <TextView
+            android:id="@+id/tvHyperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btMegaBonusAdd"
-            android:text="Bonus Mega" />
+            android:gravity="center_horizontal"
+            android:text="Cost: 35"
+            android:textColor="@android:color/holo_blue_dark" />
 
         <Button
+            android:id="@+id/btMegaBonus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/buttonMargin"
-            android:onClick="btUltraBonusAdd"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="MegaBonusAdd"
+            android:text="Bonus Mega" />
+
+        <TextView
+            android:id="@+id/tvMegaCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Cost: 55"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btUltraBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/buttonMargin"
+            android:onClick="UltraBonusAdd"
             android:text="Bonus Ultra" />
+
+        <TextView
+            android:id="@+id/tvUltraCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Cost: 80"
+            android:textColor="@android:color/holo_blue_dark" />
 
     </LinearLayout>
 </LinearLayout>
