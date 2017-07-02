@@ -66,6 +66,7 @@
                 android:layout_height="32dp"
                 android:layout_below="@id/tvNormal"
                 android:layout_marginStart="12dp"
+                android:textColor="@color/textColorSecondary"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
@@ -92,11 +93,11 @@
                 android:id="@+id/tvSuperCount"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:layout_below="@id/tvSuper"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
+                android:layout_alignBottom="@+id/tvDuperCount"
+                android:layout_alignStart="@+id/tvMegaCount"
                 android:background="@drawable/back"
                 android:gravity="center"
+                android:textColor="@color/textColorSecondary"
                 android:text="0" />
 
             <TextView
@@ -125,6 +126,7 @@
                 android:layout_below="@id/tvDuper"
                 android:layout_marginEnd="12dp"
                 android:layout_marginTop="12dp"
+                android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="0" />
@@ -155,6 +157,7 @@
                 android:layout_above="@id/tvHyperCalc"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
+                android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="0" />
@@ -184,6 +187,7 @@
                 android:layout_above="@id/tvMegaCalc"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
+                android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="0" />
@@ -205,7 +209,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="0/s"/>
+                android:text="0/s" />
 
             <TextView
                 android:id="@+id/tvUltraCount"
@@ -213,6 +217,7 @@
                 android:layout_height="32dp"
                 android:layout_above="@id/tvUltraCalc"
                 android:layout_alignParentEnd="true"
+                android:textColor="@color/textColorSecondary"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/back"
