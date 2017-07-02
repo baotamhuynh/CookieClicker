@@ -22,7 +22,7 @@
                 android:id="@+id/tvMainScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="40dp"
+                android:layout_margin="@dimen/tvMainScoreMargin"
                 android:background="#88000000"
                 android:gravity="center_horizontal"
                 android:text="@string/tv_Main_Score"
@@ -33,9 +33,9 @@
                 android:id="@+id/btIncrementClick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="48dp"
-                android:layout_marginRight="48dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginLeft="@dimen/btIncrementClickMarginLeftAndRight"
+                android:layout_marginRight="@dimen/btIncrementClickMarginLeftAndRight"
+                android:layout_marginTop="@dimen/btIncrementClickMarginTop"
                 android:gravity="center"
                 android:onClick="ClickMeButtonOnClick"
                 android:text="@string/bt_Increment_Click" />
@@ -49,25 +49,25 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="8dp"
+                android:layout_height="@dimen/ColumnWidth"
                 android:background="@drawable/border_background" />
 
             <TextView
                 android:id="@+id/tvNormal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/tvBonusMargin"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Normal" />
 
             <TextView
                 android:id="@+id/tvNormalCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_below="@id/tvNormal"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="@dimen/tvBonusMargin"
                 android:textColor="@color/textColorSecondary"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="@string/tv_Normal_Count" />
@@ -77,8 +77,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvNormalCount"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/tvBonusMargin"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Normal_Calc" />
 
             <TextView
@@ -86,13 +86,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Super" />
 
             <TextView
                 android:id="@+id/tvSuperCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_alignBottom="@+id/tvDuperCount"
                 android:layout_alignStart="@+id/tvMegaCount"
                 android:background="@drawable/back"
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvSuperCount"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Super_Calc" />
 
             <TextView
@@ -114,18 +114,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="12dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Duper" />
 
             <TextView
                 android:id="@+id/tvDuperCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/tvDuper"
-                android:layout_marginEnd="12dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
@@ -137,8 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/tvDuperCount"
-                android:layout_marginEnd="12dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
+                android:layout_marginTop="@dimen/tvBonusMargin"
                 android:text="@string/tv_Duper_Calc" />
 
             <TextView
@@ -146,17 +146,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginStart="@dimen/tvBonusMargin"
                 android:text="@string/tv_Hyper_Calc" />
 
             <TextView
                 android:id="@+id/tvHyperCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_above="@id/tvHyperCalc"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginStart="@dimen/tvBonusMargin"
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
@@ -167,8 +167,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/tvHyperCount"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginStart="@dimen/tvBonusMargin"
                 android:text="@string/tv_Hyper" />
 
             <TextView
@@ -177,16 +177,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
                 android:text="@string/tv_Mega_Calc" />
 
             <TextView
                 android:id="@+id/tvMegaCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_above="@id/tvMegaCalc"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/tvMegaCount"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
                 android:text="@string/tv_Mega" />
 
             <TextView
@@ -207,19 +207,19 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginBottom="12dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
                 android:text="@string/tv_Ultra_Calc" />
 
             <TextView
                 android:id="@+id/tvUltraCount"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="@dimen/tvBonusCountWidthAndHeight"
+                android:layout_height="@dimen/tvBonusCountWidthAndHeight"
                 android:layout_above="@id/tvUltraCalc"
                 android:layout_alignParentEnd="true"
                 android:textColor="@color/textColorSecondary"
-                android:layout_marginBottom="12dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:text="@string/tv_Ultra_Count" />
@@ -230,8 +230,8 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/tvUltraCount"
                 android:layout_alignParentEnd="true"
-                android:layout_marginBottom="12dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="@dimen/tvBonusMargin"
+                android:layout_marginEnd="@dimen/tvBonusMargin"
                 android:text="@string/tv_Ultra" />
 
         </RelativeLayout>
@@ -241,7 +241,7 @@
 
 
     <View
-        android:layout_width="8dp"
+        android:layout_width="@dimen/ColumnWidth"
         android:layout_height="match_parent"
         android:background="@drawable/border_background" />
 
