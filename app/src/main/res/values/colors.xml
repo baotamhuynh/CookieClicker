@@ -3,8 +3,9 @@
     <color name="colorPrimary">#795548</color>
     <color name="colorPrimaryDark">#5D4037</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorBackground">#6D4C41</color>
-    <color name="colorString">#33691E</color>
+    <color name="colorBackground">#222222</color>
+    <color name="textColorPrimary">#88FFFFFF</color>
+    <color name="textColorSecondary">#88000000</color>
     <color name="colorButton">#3E2723</color>
     <color name="colorBtText">#3E2723</color>
 </resources>
