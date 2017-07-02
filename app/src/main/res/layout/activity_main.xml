@@ -25,7 +25,7 @@
                 android:layout_margin="40dp"
                 android:background="#88000000"
                 android:gravity="center_horizontal"
-                android:text="0"
+                android:text="@string/tv_Main_Score"
                 android:textAllCaps="true"
                 android:textSize="36sp" />
 
@@ -38,7 +38,7 @@
                 android:layout_marginTop="36dp"
                 android:gravity="center"
                 android:onClick="ClickMeButtonOnClick"
-                android:text="Click Me!" />
+                android:text="@string/bt_Increment_Click" />
 
         </LinearLayout>
 
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Normal" />
+                android:text="@string/tv_Normal" />
 
             <TextView
                 android:id="@+id/tvNormalCount"
@@ -70,7 +70,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0" />
+                android:text="@string/tv_Normal_Count" />
 
             <TextView
                 android:id="@+id/tvNormalCalc"
@@ -79,7 +79,7 @@
                 android:layout_below="@id/tvNormalCount"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Normal_Calc" />
 
             <TextView
                 android:id="@+id/tvSuper"
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="Super" />
+                android:text="@string/tv_Super" />
 
             <TextView
                 android:id="@+id/tvSuperCount"
@@ -98,7 +98,7 @@
                 android:background="@drawable/back"
                 android:gravity="center"
                 android:textColor="@color/textColorSecondary"
-                android:text="0" />
+                android:text="@string/tv_Super_Count" />
 
             <TextView
                 android:id="@+id/tvSuperCalc"
@@ -107,7 +107,7 @@
                 android:layout_below="@id/tvSuperCount"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Super_Calc" />
 
             <TextView
                 android:id="@+id/tvDuper"
@@ -116,7 +116,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Duper" />
+                android:text="@string/tv_Duper" />
 
             <TextView
                 android:id="@+id/tvDuperCount"
@@ -129,7 +129,7 @@
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0" />
+                android:text="@string/tv_Duper_Count" />
 
             <TextView
                 android:id="@+id/tvDuperCalc"
@@ -139,7 +139,7 @@
                 android:layout_below="@id/tvDuperCount"
                 android:layout_marginEnd="12dp"
                 android:layout_marginTop="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Duper_Calc" />
 
             <TextView
                 android:id="@+id/tvHyperCalc"
@@ -148,7 +148,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Hyper_Calc" />
 
             <TextView
                 android:id="@+id/tvHyperCount"
@@ -160,7 +160,7 @@
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0" />
+                android:text="@string/tv_Hyper_Count" />
 
             <TextView
                 android:id="@+id/tvHyper"
@@ -169,7 +169,7 @@
                 android:layout_above="@id/tvHyperCount"
                 android:layout_marginBottom="12dp"
                 android:layout_marginStart="12dp"
-                android:text="Hyper" />
+                android:text="@string/tv_Hyper" />
 
             <TextView
                 android:id="@+id/tvMegaCalc"
@@ -178,7 +178,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Mega_Calc" />
 
             <TextView
                 android:id="@+id/tvMegaCount"
@@ -190,7 +190,7 @@
                 android:textColor="@color/textColorSecondary"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0" />
+                android:text="@string/tv_Mega_Count" />
 
             <TextView
                 android:id="@+id/tvMega"
@@ -199,7 +199,7 @@
                 android:layout_above="@id/tvMegaCount"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
-                android:text="Mega" />
+                android:text="@string/tv_Mega" />
 
             <TextView
                 android:id="@+id/tvUltraCalc"
@@ -209,7 +209,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="0/s" />
+                android:text="@string/tv_Ultra_Calc" />
 
             <TextView
                 android:id="@+id/tvUltraCount"
@@ -222,7 +222,7 @@
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/back"
                 android:gravity="center"
-                android:text="0" />
+                android:text="@string/tv_Ultra_Count" />
 
             <TextView
                 android:id="@+id/tvUltra"
@@ -232,7 +232,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="Ultra" />
+                android:text="@string/tv_Ultra" />
 
         </RelativeLayout>
 
@@ -254,7 +254,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bonuses"
+            android:text="@string/Bonuses"
             android:textAlignment="center" />
 
         <Button
@@ -263,14 +263,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="NormalBonusAdd"
-            android:text="Bonus Normal" />
+            android:text="@string/bt_Normal_Bonus" />
 
         <TextView
             android:id="@+id/tvNormalCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 5" />
+            android:text="@string/tv_Normal_Cost" />
 
         <Button
             android:id="@+id/btSuperBonus"
@@ -278,14 +278,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="SuperBonusAdd"
-            android:text="Bonus Super" />
+            android:text="@string/bt_Super_Bonus" />
 
         <TextView
             android:id="@+id/tvSuperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 10" />
+            android:text="@string/tv_Super_Cost" />
 
         <Button
             android:id="@+id/btDuperBonus"
@@ -293,14 +293,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="DuperBonusAdd"
-            android:text="Bonus Duper" />
+            android:text="@string/bt_Duper_Bonus" />
 
         <TextView
             android:id="@+id/tvDuperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 20" />
+            android:text="@string/tv_DuperCost" />
 
         <Button
             android:id="@+id/btHyperBonus"
@@ -308,14 +308,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="HyperBonusAdd"
-            android:text="Bonus Hyper" />
+            android:text="@string/bt_Hyper_Bonus" />
 
         <TextView
             android:id="@+id/tvHyperCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 35" />
+            android:text="@string/tv_Hyper_Cost" />
 
         <Button
             android:id="@+id/btMegaBonus"
@@ -323,14 +323,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="MegaBonusAdd"
-            android:text="Bonus Mega" />
+            android:text="@string/bt_Mega_Bonus" />
 
         <TextView
             android:id="@+id/tvMegaCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 55" />
+            android:text="@string/tv_Mega_Cost" />
 
         <Button
             android:id="@+id/btUltraBonus"
@@ -338,14 +338,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
             android:onClick="UltraBonusAdd"
-            android:text="Bonus Ultra" />
+            android:text="@string/bt_Ultra_Bonus" />
 
         <TextView
             android:id="@+id/tvUltraCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Cost: 80" />
+            android:text="@string/tv_Ultra_Cost" />
 
     </LinearLayout>
 </LinearLayout>
