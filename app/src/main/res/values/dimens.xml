@@ -7,7 +7,6 @@
     <dimen name="tvBonusMargin">12dp</dimen>
     <dimen name="tvBonusCountWidthAndHeight">32dp</dimen>
 
-
     <dimen name="btIncrementClickMarginLeftAndRight">32dp</dimen>
     <dimen name="btIncrementClickMarginTop">36dp</dimen>
     <dimen name="btIncrementClick">32dp</dimen>

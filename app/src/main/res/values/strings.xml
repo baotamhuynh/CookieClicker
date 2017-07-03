@@ -4,50 +4,21 @@
     <string name="about">About</string>
     <string name="reset">Reset</string>
 
-    <string name="tv_Main_Score">0</string>
     <string name="bt_Increment_Click">Click Me!</string>
 
     <string name="tv_Normal">Normal</string>
-    <string name="tv_Normal_Count">0</string>
-    <string name="tv_Normal_Calc">0/s</string>
-
     <string name="tv_Super">Super</string>
-    <string name="tv_Super_Count">0</string>
-    <string name="tv_Super_Calc">0/s</string>
-
     <string name="tv_Duper">Duper</string>
-    <string name="tv_Duper_Count">0</string>
-    <string name="tv_Duper_Calc">0/s</string>
-
     <string name="tv_Hyper">Hyper</string>
-    <string name="tv_Hyper_Count">0</string>
-    <string name="tv_Hyper_Calc">0/s</string>
-
     <string name="tv_Mega">Mega</string>
-    <string name="tv_Mega_Count">0</string>
-    <string name="tv_Mega_Calc">0/s</string>
-
     <string name="tv_Ultra">Ultra</string>
-    <string name="tv_Ultra_Count">0</string>
-    <string name="tv_Ultra_Calc">0/s</string>
 
     <string name="Bonuses">Bonuses</string>
 
     <string name="bt_Normal_Bonus">Bonus Normal</string>
-    <string name="tv_Normal_Cost">Cost: 5</string>
-
     <string name="bt_Super_Bonus">Bonus Super</string>
-    <string name="tv_Super_Cost">Cost: 10</string>
-
     <string name="bt_Duper_Bonus">Bonus Duper</string>
-    <string name="tv_DuperCost">Cost: 20</string>
-
     <string name="bt_Hyper_Bonus">Bonus Hyper</string>
-    <string name="tv_Hyper_Cost">Cost: 35</string>
-
     <string name="bt_Mega_Bonus">Bonus Mega</string>
-    <string name="tv_Mega_Cost">Cost: 55</string>
-
     <string name="bt_Ultra_Bonus">Bonus Ultra</string>
-    <string name="tv_Ultra_Cost">Cost: 80</string>
 </resources>
