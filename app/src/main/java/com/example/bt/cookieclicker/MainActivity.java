@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     public Button btMegaBonus;
     public Button btUltraBonus;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                         mainScore += bonusPerSecond[0] + bonusPerSecond[1] + bonusPerSecond[2] +
                                 bonusPerSecond[3] + bonusPerSecond[4] + bonusPerSecond[5];
                         tvMainScore.setText(String.valueOf(mainScore));
-
                     }
                 });
             }
@@ -92,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         }, 100, 100);
     }
 
-
-
     public void ClickMeButtonOnClick(View v) {
         mainScore++;
         tvMainScore.setText(String.valueOf(mainScore));
@@ -101,39 +97,33 @@ public class MainActivity extends AppCompatActivity {
 
     public void CheckIfEnoughPoints() {
 
-        if (mainScore >= bonusCost[0]) {
+        if (mainScore >= bonusCost[0])
             btNormalBonus.setEnabled(true);
-        }
 
         else btNormalBonus.setEnabled(false);
 
-        if (mainScore >= bonusCost[1]) {
+        if (mainScore >= bonusCost[1])
             btSuperBonus.setEnabled(true);
-        }
 
         else btSuperBonus.setEnabled(false);
 
-        if (mainScore >= bonusCost[2]) {
+        if (mainScore >= bonusCost[2])
             btDuperBonus.setEnabled(true);
-        }
 
         else btDuperBonus.setEnabled(false);
 
-        if (mainScore >= bonusCost[3]) {
+        if (mainScore >= bonusCost[3])
             btHyperBonus.setEnabled(true);
-        }
 
         else btHyperBonus.setEnabled(false);
 
-        if (mainScore >= bonusCost[4]) {
+        if (mainScore >= bonusCost[4])
             btMegaBonus.setEnabled(true);
-        }
 
         else btMegaBonus.setEnabled(false);
 
-        if (mainScore >= bonusCost[5]) {
+        if (mainScore >= bonusCost[5])
             btUltraBonus.setEnabled(true);
-        }
 
         else btUltraBonus.setEnabled(false);
     }
