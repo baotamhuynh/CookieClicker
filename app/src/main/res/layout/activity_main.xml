@@ -276,7 +276,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="NormalBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Normal_Bonus" />
 
         <TextView
@@ -292,7 +292,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="SuperBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Super_Bonus" />
 
         <TextView
@@ -308,7 +308,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="DuperBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Duper_Bonus" />
 
         <TextView
@@ -324,7 +324,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="HyperBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Hyper_Bonus" />
 
         <TextView
@@ -340,7 +340,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="MegaBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Mega_Bonus" />
 
         <TextView
@@ -356,7 +356,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/buttonMargin"
-            android:onClick="UltraBonusAdd"
+            android:onClick="BonusButtonPressed"
             android:text="@string/bt_Ultra_Bonus" />
 
         <TextView
