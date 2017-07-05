@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="buttonMargin">8dp</dimen>
+
+    <dimen name="tvMainScoreMargin">40dp</dimen>
+
+    <dimen name="tvBonusMargin">12dp</dimen>
+    <dimen name="tvBonusCountWidthAndHeight">32dp</dimen>
+
+    <dimen name="btIncrementClickMarginLeftAndRight">32dp</dimen>
+    <dimen name="btIncrementClickMarginTop">36dp</dimen>
+    <dimen name="btIncrementClick">32dp</dimen>
+
+    <dimen name="ColumnWidth">8dp</dimen>
 </resources>
